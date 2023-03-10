@@ -6,22 +6,21 @@ import "./props.css"
 
 /**
  * 
- * @param {Using props} props 
+ * @param {Using props destructuring} param0 
  * @returns 
  */
-function Props(props) {
+function Team({img, title, desc, button}) {
   return (
     <Card className='card'>
-          <Card.Img variant="top" src={ props.img} />
+          <Card.Img variant="top" src={ img} />
       <Card.Body>
-              <Card.Title>{ props.title}</Card.Title>
+              <Card.Title>{ title}</Card.Title>
         <Card.Text>
-          {props.desc}
+          {desc}
         </Card.Text>
-              <Button variant="primary">{ props.button}</Button>
+              <Button variant="primary">{ button}</Button>
       </Card.Body>
     </Card>
   );
 }
-
-export default Props;
+export default Team
