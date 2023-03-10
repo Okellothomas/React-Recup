@@ -29,8 +29,13 @@ function Map() {
     const myMeals = meals.map(meal => `<p>${meal}</p>`)
 
     console.log(myMeals)
+
+    // Array and jx elements
+
   return (
-    <div>Map</div>
+    <div>
+          {myMeals}
+    </div>
   )
 }
 
