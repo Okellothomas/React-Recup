@@ -11,17 +11,24 @@ function Map() {
     console.log(squarearray)
     const names = ["okello, thomas, olal, sure, then, our"]
 
-    const ourNames = names.map((item) => {
-        if (item[0]) {
-            return item[0].toUpperCase
-        } else {
-            return item.toLowerCase
-        }
-    })
+    const ourNames = names.map(item => item[0].toUpperCase() + item.slice(1))
 
     console.log(ourNames)
-    
 
+
+    // challange number 3
+    const schools = ["Kanga", "Jkuat", "Kadika", "Paw-ndege", "Ngege"]
+
+    const html = schools.map(item => `<p> ${ item } </p>`)
+
+    console.log(html)
+
+    // The last pract
+    const meals = ["Ugali", "Unga", "Somoko"]
+
+    const myMeals = meals.map(meal => `<p>${meal}</p>`)
+
+    console.log(myMeals)
   return (
     <div>Map</div>
   )
