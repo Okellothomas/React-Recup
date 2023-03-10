@@ -1,13 +1,16 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import fish from "../images/fish.jpg"
+import smile from "../images/smile.jpg"
+import skit from "../images/skit.jpg"
 
 const Body = () => {
   return (
-    <Carousel fade>
+    <Carousel fade className="carousel">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+          src={fish}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -18,7 +21,7 @@ const Body = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          src={smile}
           alt="Second slide"
         />
 
@@ -30,7 +33,7 @@ const Body = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          src={skit}
           alt="Third slide"
         />
 
